@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Source>C:\Users\Ahmad Rohani\Desktop\InstallerIcon.png</Source>
+    <SmallTileSource>C:\Users\Ahmad Rohani\Desktop\InstallerIcon.png</SmallTileSource>
+    <MediumTileSource>C:\Users\Ahmad Rohani\Desktop\InstallerIcon.png</MediumTileSource>
+    <WideTileSource>C:\Users\Ahmad Rohani\Desktop\InstallerIcon.png</WideTileSource>
+    <LargeTileSource>C:\Users\Ahmad Rohani\Desktop\InstallerIcon.png</LargeTileSource>
+    <AppIconSource>C:\Users\Ahmad Rohani\Desktop\InstallerIcon.png</AppIconSource>
+    <SplashScreenSource>C:\Users\Ahmad Rohani\Desktop\InstallerIcon.png</SplashScreenSource>
+    <BadgeLogoSource>C:\Users\Ahmad Rohani\Desktop\InstallerIcon.png</BadgeLogoSource>
+    <PackageLogoSource>C:\Users\Ahmad Rohani\Desktop\InstallerIcon.png</PackageLogoSource>
+    <UapAppxPackageBuildMode>SideloadOnly</UapAppxPackageBuildMode>
+    <AppxShowAllApps>False</AppxShowAllApps>
+    <AppxBuildConfigurationSelection>neutral</AppxBuildConfigurationSelection>
+    <PackageOptionalProjectsInIdeBuilds>False</PackageOptionalProjectsInIdeBuilds>
+  </PropertyGroup>
+</Project>

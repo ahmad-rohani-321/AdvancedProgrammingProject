@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ShirzadSystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="Did" />
+    </Key>
+    <Property Name="Did" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DepartmentName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Monographs" Relationship="Self.FK_Monograph_Departments" FromRole="Departments" ToRole="Monograph" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="Eid" />
+    </Key>
+    <Property Name="Eid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FatherName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Job" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="branch" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Faculty">
+    <Key>
+      <PropertyRef Name="Fid" />
+    </Key>
+    <Property Name="Fid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FacultyName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Monographs" Relationship="Self.FK_Monograph_Faculty" FromRole="Faculties" ToRole="Monograph" />
+  </EntityType>
+  <EntityType Name="JournalEntry">
+    <Key>
+      <PropertyRef Name="JEid" />
+    </Key>
+    <Property Name="JEid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Till" Type="Int32" Nullable="false" />
+    <Property Name="credit" Type="Decimal" Precision="18" Scale="10" />
+    <Property Name="debit" Type="Decimal" Precision="18" Scale="10" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TransactionType" Type="Binary" MaxLength="50" FixedLength="true" />
+    <Property Name="TransactionReference" Type="Int32" />
+    <NavigationProperty Name="Till1" Relationship="Self.FK_JournalEntry_TillId" FromRole="JournalEntry" ToRole="Tills" />
+  </EntityType>
+  <EntityType Name="Monograph">
+    <Key>
+      <PropertyRef Name="Mid" />
+    </Key>
+    <Property Name="Mid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UniqueId" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="totalPrice" Type="Decimal" Precision="10" Scale="10" />
+    <Property Name="totalDiscount" Type="Decimal" Precision="10" Scale="10" />
+    <Property Name="totalRecived" Type="Decimal" Precision="10" Scale="10" />
+    <Property Name="PersonId" Type="Int32" />
+    <Property Name="UniversityId" Type="Int32" />
+    <Property Name="FacultyId" Type="Int32" />
+    <Property Name="DepartmentId" Type="Int32" />
+    <NavigationProperty Name="Department" Relationship="Self.FK_Monograph_Departments" FromRole="Monograph" ToRole="Departments" />
+    <NavigationProperty Name="Faculty" Relationship="Self.FK_Monograph_Faculty" FromRole="Monograph" ToRole="Faculties" />
+    <NavigationProperty Name="PersonInformation" Relationship="Self.FK_Monograph_PersonId" FromRole="Monograph" ToRole="PersonInformation" />
+    <NavigationProperty Name="University" Relationship="Self.FK_Monograph_University" FromRole="Monograph" ToRole="Universities" />
+  </EntityType>
+  <EntityType Name="PersonInformation">
+    <Key>
+      <PropertyRef Name="PIid" />
+    </Key>
+    <Property Name="PIid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FatherName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Province" Type="Int32" />
+    <NavigationProperty Name="Monographs" Relationship="Self.FK_Monograph_PersonId" FromRole="PersonInformation" ToRole="Monograph" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Till">
+    <Key>
+      <PropertyRef Name="Tid" />
+    </Key>
+    <Property Name="Tid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TillName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TillValue" Type="Decimal" Precision="10" Scale="10" Nullable="false" />
+    <NavigationProperty Name="JournalEntries" Relationship="Self.FK_JournalEntry_TillId" FromRole="Tills" ToRole="JournalEntry" />
+  </EntityType>
+  <EntityType Name="University">
+    <Key>
+      <PropertyRef Name="Uid" />
+    </Key>
+    <Property Name="Uid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UniversityName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Monographs" Relationship="Self.FK_Monograph_University" FromRole="Universities" ToRole="Monograph" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Uid" />
+    </Key>
+    <Property Name="Uid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Monograph_Departments">
+    <End Role="Departments" Type="Self.Department" Multiplicity="0..1" />
+    <End Role="Monograph" Type="Self.Monograph" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departments">
+        <PropertyRef Name="Did" />
+      </Principal>
+      <Dependent Role="Monograph">
+        <PropertyRef Name="DepartmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Monograph_Faculty">
+    <End Role="Faculties" Type="Self.Faculty" Multiplicity="0..1" />
+    <End Role="Monograph" Type="Self.Monograph" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Faculties">
+        <PropertyRef Name="Fid" />
+      </Principal>
+      <Dependent Role="Monograph">
+        <PropertyRef Name="FacultyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JournalEntry_TillId">
+    <End Role="Tills" Type="Self.Till" Multiplicity="1" />
+    <End Role="JournalEntry" Type="Self.JournalEntry" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tills">
+        <PropertyRef Name="Tid" />
+      </Principal>
+      <Dependent Role="JournalEntry">
+        <PropertyRef Name="Till" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Monograph_PersonId">
+    <End Role="PersonInformation" Type="Self.PersonInformation" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Monograph" Type="Self.Monograph" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PersonInformation">
+        <PropertyRef Name="PIid" />
+      </Principal>
+      <Dependent Role="Monograph">
+        <PropertyRef Name="PersonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Monograph_University">
+    <End Role="Universities" Type="Self.University" Multiplicity="0..1" />
+    <End Role="Monograph" Type="Self.Monograph" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Universities">
+        <PropertyRef Name="Uid" />
+      </Principal>
+      <Dependent Role="Monograph">
+        <PropertyRef Name="UniversityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SystemEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Departments" EntityType="Self.Department" />
+    <EntitySet Name="Employees" EntityType="Self.Employee" />
+    <EntitySet Name="Faculties" EntityType="Self.Faculty" />
+    <EntitySet Name="JournalEntries" EntityType="Self.JournalEntry" />
+    <EntitySet Name="Monographs" EntityType="Self.Monograph" />
+    <EntitySet Name="PersonInformations" EntityType="Self.PersonInformation" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Tills" EntityType="Self.Till" />
+    <EntitySet Name="Universities" EntityType="Self.University" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <AssociationSet Name="FK_Monograph_Departments" Association="Self.FK_Monograph_Departments">
+      <End Role="Departments" EntitySet="Departments" />
+      <End Role="Monograph" EntitySet="Monographs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Monograph_Faculty" Association="Self.FK_Monograph_Faculty">
+      <End Role="Faculties" EntitySet="Faculties" />
+      <End Role="Monograph" EntitySet="Monographs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JournalEntry_TillId" Association="Self.FK_JournalEntry_TillId">
+      <End Role="Tills" EntitySet="Tills" />
+      <End Role="JournalEntry" EntitySet="JournalEntries" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Monograph_PersonId" Association="Self.FK_Monograph_PersonId">
+      <End Role="PersonInformation" EntitySet="PersonInformations" />
+      <End Role="Monograph" EntitySet="Monographs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Monograph_University" Association="Self.FK_Monograph_University">
+      <End Role="Universities" EntitySet="Universities" />
+      <End Role="Monograph" EntitySet="Monographs" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,30 @@
+E:\Projects\Github\FarsiLibrary - Copy\binaries\FarsiLibrary.Win.dll
+E:\Projects\Github\FarsiLibrary - Copy\binaries\FarsiLibrary.Win.pdb
+E:\Projects\Github\FarsiLibrary - Copy\FarsiLibrary.Win\obj\Debug\FarsiLibrary.Win.csprojAssemblyReference.cache
+E:\Projects\Github\FarsiLibrary - Copy\FarsiLibrary.Win\obj\Debug\FarsiLibrary.Win.Design.About.resources
+E:\Projects\Github\FarsiLibrary - Copy\FarsiLibrary.Win\obj\Debug\FarsiLibrary.Win.Controls.FAMessageBoxForm.resources
+E:\Projects\Github\FarsiLibrary - Copy\FarsiLibrary.Win\obj\Debug\FarsiLibrary.Win.csproj.GenerateResource.cache
+E:\Projects\Github\FarsiLibrary - Copy\FarsiLibrary.Win\obj\Debug\FarsiLibrary.Win.csproj.CoreCompileInputs.cache
+E:\Projects\Github\FarsiLibrary - Copy\FarsiLibrary.Win\obj\Debug\FarsiLibrary.Win.csproj.CopyComplete
+E:\Projects\Github\FarsiLibrary - Copy\FarsiLibrary.Win\obj\Debug\FarsiLibrary.Win.dll
+E:\Projects\Github\FarsiLibrary - Copy\FarsiLibrary.Win\obj\Debug\FarsiLibrary.Win.pdb
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\binaries\FarsiLibrary.Win.dll
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\binaries\FarsiLibrary.Win.pdb
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\FarsiLibrary.Win\obj\Debug\FarsiLibrary.Win.csprojAssemblyReference.cache
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\FarsiLibrary.Win\obj\Debug\FarsiLibrary.Win.Design.About.resources
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\FarsiLibrary.Win\obj\Debug\FarsiLibrary.Win.Controls.FAMessageBoxForm.resources
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\FarsiLibrary.Win\obj\Debug\FarsiLibrary.Win.csproj.GenerateResource.cache
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\FarsiLibrary.Win\obj\Debug\FarsiLibrary.Win.csproj.CoreCompileInputs.cache
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\FarsiLibrary.Win\obj\Debug\FarsiLibrary.Win.csproj.CopyComplete
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\FarsiLibrary.Win\obj\Debug\FarsiLibrary.Win.dll
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\FarsiLibrary.Win\obj\Debug\FarsiLibrary.Win.pdb
+E:\Projects\SerzadSystem Copies\SherzadSystem\binaries\FarsiLibrary.Win.dll
+E:\Projects\SerzadSystem Copies\SherzadSystem\binaries\FarsiLibrary.Win.pdb
+E:\Projects\SerzadSystem Copies\SherzadSystem\FarsiLibrary.Win\obj\Debug\FarsiLibrary.Win.csprojAssemblyReference.cache
+E:\Projects\SerzadSystem Copies\SherzadSystem\FarsiLibrary.Win\obj\Debug\FarsiLibrary.Win.Design.About.resources
+E:\Projects\SerzadSystem Copies\SherzadSystem\FarsiLibrary.Win\obj\Debug\FarsiLibrary.Win.Controls.FAMessageBoxForm.resources
+E:\Projects\SerzadSystem Copies\SherzadSystem\FarsiLibrary.Win\obj\Debug\FarsiLibrary.Win.csproj.GenerateResource.cache
+E:\Projects\SerzadSystem Copies\SherzadSystem\FarsiLibrary.Win\obj\Debug\FarsiLibrary.Win.csproj.CoreCompileInputs.cache
+E:\Projects\SerzadSystem Copies\SherzadSystem\FarsiLibrary.Win\obj\Debug\FarsiLibrary.Win.csproj.CopyComplete
+E:\Projects\SerzadSystem Copies\SherzadSystem\FarsiLibrary.Win\obj\Debug\FarsiLibrary.Win.dll
+E:\Projects\SerzadSystem Copies\SherzadSystem\FarsiLibrary.Win\obj\Debug\FarsiLibrary.Win.pdb

@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ShirzadSystemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Departments">
+    <Key>
+      <PropertyRef Name="Did" />
+    </Key>
+    <Property Name="Did" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DepartmentName" Type="nvarchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Employees">
+    <Key>
+      <PropertyRef Name="Eid" />
+    </Key>
+    <Property Name="Eid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="FatherName" Type="nvarchar" MaxLength="255" />
+    <Property Name="Job" Type="nvarchar" MaxLength="100" />
+    <Property Name="PhoneNo" Type="varchar" MaxLength="20" />
+    <Property Name="branch" Type="nvarchar" MaxLength="100" />
+    <Property Name="remarks" Type="ntext" />
+  </EntityType>
+  <EntityType Name="Faculties">
+    <Key>
+      <PropertyRef Name="Fid" />
+    </Key>
+    <Property Name="Fid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FacultyName" Type="nvarchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="JournalEntry">
+    <Key>
+      <PropertyRef Name="JEid" />
+    </Key>
+    <Property Name="JEid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Till" Type="int" Nullable="false" />
+    <Property Name="credit" Type="decimal" Precision="18" Scale="10" />
+    <Property Name="debit" Type="decimal" Precision="18" Scale="10" />
+    <Property Name="CreationDate" Type="date" Nullable="false" />
+    <Property Name="remarks" Type="ntext" />
+    <Property Name="TransactionType" Type="binary" MaxLength="50" />
+    <Property Name="TransactionReference" Type="int" />
+  </EntityType>
+  <EntityType Name="Monograph">
+    <Key>
+      <PropertyRef Name="Mid" />
+    </Key>
+    <Property Name="Mid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UniqueId" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="CreationDate" Type="date" Nullable="false" />
+    <Property Name="remarks" Type="ntext" />
+    <Property Name="totalPrice" Type="decimal" Precision="10" Scale="10" />
+    <Property Name="totalDiscount" Type="decimal" Precision="10" Scale="10" />
+    <Property Name="totalRecived" Type="decimal" Precision="10" Scale="10" />
+    <Property Name="PersonId" Type="int" />
+    <Property Name="UniversityId" Type="int" />
+    <Property Name="FacultyId" Type="int" />
+    <Property Name="DepartmentId" Type="int" />
+  </EntityType>
+  <EntityType Name="PersonInformation">
+    <Key>
+      <PropertyRef Name="PIid" />
+    </Key>
+    <Property Name="PIid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="FatherName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Phone" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Photo" Type="image" />
+    <Property Name="CreationDate" Type="date" Nullable="false" />
+    <Property Name="Province" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Tills">
+    <Key>
+      <PropertyRef Name="Tid" />
+    </Key>
+    <Property Name="Tid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TillName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="TillValue" Type="decimal" Precision="10" Scale="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Universities">
+    <Key>
+      <PropertyRef Name="Uid" />
+    </Key>
+    <Property Name="Uid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UniversityName" Type="nvarchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Uid" />
+    </Key>
+    <Property Name="Uid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_JournalEntry_TillId">
+    <End Role="Tills" Type="Self.Tills" Multiplicity="1" />
+    <End Role="JournalEntry" Type="Self.JournalEntry" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tills">
+        <PropertyRef Name="Tid" />
+      </Principal>
+      <Dependent Role="JournalEntry">
+        <PropertyRef Name="Till" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Monograph_Departments">
+    <End Role="Departments" Type="Self.Departments" Multiplicity="0..1" />
+    <End Role="Monograph" Type="Self.Monograph" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departments">
+        <PropertyRef Name="Did" />
+      </Principal>
+      <Dependent Role="Monograph">
+        <PropertyRef Name="DepartmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Monograph_Faculty">
+    <End Role="Faculties" Type="Self.Faculties" Multiplicity="0..1" />
+    <End Role="Monograph" Type="Self.Monograph" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Faculties">
+        <PropertyRef Name="Fid" />
+      </Principal>
+      <Dependent Role="Monograph">
+        <PropertyRef Name="FacultyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Monograph_PersonId">
+    <End Role="PersonInformation" Type="Self.PersonInformation" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Monograph" Type="Self.Monograph" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PersonInformation">
+        <PropertyRef Name="PIid" />
+      </Principal>
+      <Dependent Role="Monograph">
+        <PropertyRef Name="PersonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Monograph_University">
+    <End Role="Universities" Type="Self.Universities" Multiplicity="0..1" />
+    <End Role="Monograph" Type="Self.Monograph" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Universities">
+        <PropertyRef Name="Uid" />
+      </Principal>
+      <Dependent Role="Monograph">
+        <PropertyRef Name="UniversityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ShirzadSystemModelStoreContainer">
+    <EntitySet Name="Departments" EntityType="Self.Departments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Employees" EntityType="Self.Employees" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Faculties" EntityType="Self.Faculties" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="JournalEntry" EntityType="Self.JournalEntry" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Monograph" EntityType="Self.Monograph" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PersonInformation" EntityType="Self.PersonInformation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tills" EntityType="Self.Tills" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Universities" EntityType="Self.Universities" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_JournalEntry_TillId" Association="Self.FK_JournalEntry_TillId">
+      <End Role="Tills" EntitySet="Tills" />
+      <End Role="JournalEntry" EntitySet="JournalEntry" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Monograph_Departments" Association="Self.FK_Monograph_Departments">
+      <End Role="Departments" EntitySet="Departments" />
+      <End Role="Monograph" EntitySet="Monograph" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Monograph_Faculty" Association="Self.FK_Monograph_Faculty">
+      <End Role="Faculties" EntitySet="Faculties" />
+      <End Role="Monograph" EntitySet="Monograph" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Monograph_PersonId" Association="Self.FK_Monograph_PersonId">
+      <End Role="PersonInformation" EntitySet="PersonInformation" />
+      <End Role="Monograph" EntitySet="Monograph" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Monograph_University" Association="Self.FK_Monograph_University">
+      <End Role="Universities" EntitySet="Universities" />
+      <End Role="Monograph" EntitySet="Monograph" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,28 @@
+E:\Projects\Github\PashtoLibrary\binaries\FarsiLibrary.Utils.dll
+E:\Projects\Github\PashtoLibrary\binaries\FarsiLibrary.Utils.pdb
+E:\Projects\Github\PashtoLibrary\FarsiLibrary.Utils\obj\Debug\FarsiLibrary.Utils.csprojAssemblyReference.cache
+E:\Projects\Github\PashtoLibrary\FarsiLibrary.Utils\obj\Debug\FarsiLibrary.Utils.csproj.CoreCompileInputs.cache
+E:\Projects\Github\PashtoLibrary\FarsiLibrary.Utils\obj\Debug\FarsiLibrary.Utils.csproj.CopyComplete
+E:\Projects\Github\PashtoLibrary\FarsiLibrary.Utils\obj\Debug\FarsiLibrary.Utils.dll
+E:\Projects\Github\PashtoLibrary\FarsiLibrary.Utils\obj\Debug\FarsiLibrary.Utils.pdb
+E:\Projects\Github\FarsiLibrary - Copy\binaries\FarsiLibrary.Utils.dll
+E:\Projects\Github\FarsiLibrary - Copy\binaries\FarsiLibrary.Utils.pdb
+E:\Projects\Github\FarsiLibrary - Copy\FarsiLibrary.Utils\obj\Debug\FarsiLibrary.Utils.csprojAssemblyReference.cache
+E:\Projects\Github\FarsiLibrary - Copy\FarsiLibrary.Utils\obj\Debug\FarsiLibrary.Utils.csproj.CoreCompileInputs.cache
+E:\Projects\Github\FarsiLibrary - Copy\FarsiLibrary.Utils\obj\Debug\FarsiLibrary.Utils.csproj.CopyComplete
+E:\Projects\Github\FarsiLibrary - Copy\FarsiLibrary.Utils\obj\Debug\FarsiLibrary.Utils.dll
+E:\Projects\Github\FarsiLibrary - Copy\FarsiLibrary.Utils\obj\Debug\FarsiLibrary.Utils.pdb
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\binaries\FarsiLibrary.Utils.dll
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\binaries\FarsiLibrary.Utils.pdb
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\FarsiLibrary.Utils\obj\Debug\FarsiLibrary.Utils.csprojAssemblyReference.cache
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\FarsiLibrary.Utils\obj\Debug\FarsiLibrary.Utils.csproj.CoreCompileInputs.cache
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\FarsiLibrary.Utils\obj\Debug\FarsiLibrary.Utils.csproj.CopyComplete
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\FarsiLibrary.Utils\obj\Debug\FarsiLibrary.Utils.dll
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\FarsiLibrary.Utils\obj\Debug\FarsiLibrary.Utils.pdb
+E:\Projects\SerzadSystem Copies\SherzadSystem\binaries\FarsiLibrary.Utils.dll
+E:\Projects\SerzadSystem Copies\SherzadSystem\binaries\FarsiLibrary.Utils.pdb
+E:\Projects\SerzadSystem Copies\SherzadSystem\FarsiLibrary.Utils\obj\Debug\FarsiLibrary.Utils.csprojAssemblyReference.cache
+E:\Projects\SerzadSystem Copies\SherzadSystem\FarsiLibrary.Utils\obj\Debug\FarsiLibrary.Utils.csproj.CoreCompileInputs.cache
+E:\Projects\SerzadSystem Copies\SherzadSystem\FarsiLibrary.Utils\obj\Debug\FarsiLibrary.Utils.csproj.CopyComplete
+E:\Projects\SerzadSystem Copies\SherzadSystem\FarsiLibrary.Utils\obj\Debug\FarsiLibrary.Utils.dll
+E:\Projects\SerzadSystem Copies\SherzadSystem\FarsiLibrary.Utils\obj\Debug\FarsiLibrary.Utils.pdb

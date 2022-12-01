@@ -1,0 +1,876 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ShirzadSystemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AccountEntry">
+          <Key>
+            <PropertyRef Name="Aid" />
+          </Key>
+          <Property Name="Aid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="JournalId" Type="int" Nullable="false" />
+          <Property Name="EmpId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BookCategories">
+          <Key>
+            <PropertyRef Name="Cid" />
+          </Key>
+          <Property Name="Cid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CategoryName" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Books">
+          <Key>
+            <PropertyRef Name="Bid" />
+          </Key>
+          <Property Name="Bid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BookName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="BookAuthor" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="PublishYear" Type="int" Nullable="false" />
+          <Property Name="BookFile" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="PublishingIndustry" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Cate_id" Type="int" />
+        </EntityType>
+        <EntityType Name="Departments">
+          <Key>
+            <PropertyRef Name="Did" />
+          </Key>
+          <Property Name="Did" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DepartmentName" Type="nvarchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Employees">
+          <Key>
+            <PropertyRef Name="Eid" />
+          </Key>
+          <Property Name="Eid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FullName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="FatherName" Type="nvarchar" MaxLength="255" />
+          <Property Name="Job" Type="nvarchar" MaxLength="100" />
+          <Property Name="PhoneNo" Type="varchar" MaxLength="20" />
+          <Property Name="branch" Type="nvarchar" MaxLength="100" />
+          <Property Name="remarks" Type="ntext" />
+        </EntityType>
+        <EntityType Name="ERCodes">
+          <Key>
+            <PropertyRef Name="Cid" />
+          </Key>
+          <Property Name="Cid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CodeName" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CodeType" Type="bit" Nullable="false" />
+          <Property Name="IsReserved" Type="bit" />
+        </EntityType>
+        <EntityType Name="Faculties">
+          <Key>
+            <PropertyRef Name="Fid" />
+          </Key>
+          <Property Name="Fid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FacultyName" Type="nvarchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="JournalEntry">
+          <Key>
+            <PropertyRef Name="JEid" />
+          </Key>
+          <Property Name="JEid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Till" Type="int" Nullable="false" />
+          <Property Name="credit" Type="money" />
+          <Property Name="debit" Type="money" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="remarks" Type="ntext" />
+          <Property Name="TransactionType" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Literature">
+          <Key>
+            <PropertyRef Name="Lid" />
+          </Key>
+          <Property Name="Lid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UniqueId" Type="int" Nullable="false" />
+          <Property Name="LiteratureName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="CreationDate" Type="date" Nullable="false" />
+          <Property Name="remarks" Type="ntext" />
+          <Property Name="TotalAmount" Type="money" Nullable="false" />
+          <Property Name="TotalDiscount" Type="money" Nullable="false" />
+          <Property Name="TotalRecived" Type="money" Nullable="false" />
+          <Property Name="Person" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Monograph">
+          <Key>
+            <PropertyRef Name="Mid" />
+          </Key>
+          <Property Name="Mid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UniqueId" Type="int" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Year" Type="int" Nullable="false" />
+          <Property Name="CreationDate" Type="date" Nullable="false" />
+          <Property Name="remarks" Type="ntext" />
+          <Property Name="totalPrice" Type="money" />
+          <Property Name="totalDiscount" Type="money" />
+          <Property Name="totalRecived" Type="money" />
+          <Property Name="PersonId" Type="int" />
+          <Property Name="UniversityId" Type="int" />
+          <Property Name="FacultyId" Type="int" />
+          <Property Name="DepartmentId" Type="int" />
+        </EntityType>
+        <EntityType Name="PersonInformation">
+          <Key>
+            <PropertyRef Name="PIid" />
+          </Key>
+          <Property Name="PIid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="FatherName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Phone" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="Photo" Type="image" />
+          <Property Name="CreationDate" Type="date" Nullable="false" />
+          <Property Name="Province" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Tills">
+          <Key>
+            <PropertyRef Name="Tid" />
+          </Key>
+          <Property Name="Tid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TillName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="TillValue" Type="money" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Universities">
+          <Key>
+            <PropertyRef Name="Uid" />
+          </Key>
+          <Property Name="Uid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UniversityName" Type="nvarchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="Uid" />
+          </Key>
+          <Property Name="Uid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_AccountEntry_Employees">
+          <End Role="Employees" Type="Self.Employees" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AccountEntry" Type="Self.AccountEntry" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employees">
+              <PropertyRef Name="Eid" />
+            </Principal>
+            <Dependent Role="AccountEntry">
+              <PropertyRef Name="EmpId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AccountEntry_JournalEntry">
+          <End Role="JournalEntry" Type="Self.JournalEntry" Multiplicity="1" />
+          <End Role="AccountEntry" Type="Self.AccountEntry" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JournalEntry">
+              <PropertyRef Name="JEid" />
+            </Principal>
+            <Dependent Role="AccountEntry">
+              <PropertyRef Name="JournalId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Books_BookCategories">
+          <End Role="BookCategories" Type="Self.BookCategories" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Books" Type="Self.Books" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BookCategories">
+              <PropertyRef Name="Cid" />
+            </Principal>
+            <Dependent Role="Books">
+              <PropertyRef Name="Cate_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_JournalEntry_ERCodes">
+          <End Role="ERCodes" Type="Self.ERCodes" Multiplicity="1" />
+          <End Role="JournalEntry" Type="Self.JournalEntry" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ERCodes">
+              <PropertyRef Name="Cid" />
+            </Principal>
+            <Dependent Role="JournalEntry">
+              <PropertyRef Name="TransactionType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_JournalEntry_TillId">
+          <End Role="Tills" Type="Self.Tills" Multiplicity="1" />
+          <End Role="JournalEntry" Type="Self.JournalEntry" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tills">
+              <PropertyRef Name="Tid" />
+            </Principal>
+            <Dependent Role="JournalEntry">
+              <PropertyRef Name="Till" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Literature_PersonInformation">
+          <End Role="PersonInformation" Type="Self.PersonInformation" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Literature" Type="Self.Literature" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PersonInformation">
+              <PropertyRef Name="PIid" />
+            </Principal>
+            <Dependent Role="Literature">
+              <PropertyRef Name="Person" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Monograph_Departments">
+          <End Role="Departments" Type="Self.Departments" Multiplicity="0..1" />
+          <End Role="Monograph" Type="Self.Monograph" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Departments">
+              <PropertyRef Name="Did" />
+            </Principal>
+            <Dependent Role="Monograph">
+              <PropertyRef Name="DepartmentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Monograph_Faculty">
+          <End Role="Faculties" Type="Self.Faculties" Multiplicity="0..1" />
+          <End Role="Monograph" Type="Self.Monograph" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Faculties">
+              <PropertyRef Name="Fid" />
+            </Principal>
+            <Dependent Role="Monograph">
+              <PropertyRef Name="FacultyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Monograph_PersonId">
+          <End Role="PersonInformation" Type="Self.PersonInformation" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Monograph" Type="Self.Monograph" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PersonInformation">
+              <PropertyRef Name="PIid" />
+            </Principal>
+            <Dependent Role="Monograph">
+              <PropertyRef Name="PersonId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Monograph_University">
+          <End Role="Universities" Type="Self.Universities" Multiplicity="0..1" />
+          <End Role="Monograph" Type="Self.Monograph" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Universities">
+              <PropertyRef Name="Uid" />
+            </Principal>
+            <Dependent Role="Monograph">
+              <PropertyRef Name="UniversityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ShirzadSystemModelStoreContainer">
+          <EntitySet Name="AccountEntry" EntityType="Self.AccountEntry" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BookCategories" EntityType="Self.BookCategories" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Books" EntityType="Self.Books" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Departments" EntityType="Self.Departments" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Employees" EntityType="Self.Employees" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ERCodes" EntityType="Self.ERCodes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Faculties" EntityType="Self.Faculties" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="JournalEntry" EntityType="Self.JournalEntry" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Literature" EntityType="Self.Literature" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Monograph" EntityType="Self.Monograph" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PersonInformation" EntityType="Self.PersonInformation" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tills" EntityType="Self.Tills" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Universities" EntityType="Self.Universities" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_AccountEntry_Employees" Association="Self.FK_AccountEntry_Employees">
+            <End Role="Employees" EntitySet="Employees" />
+            <End Role="AccountEntry" EntitySet="AccountEntry" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AccountEntry_JournalEntry" Association="Self.FK_AccountEntry_JournalEntry">
+            <End Role="JournalEntry" EntitySet="JournalEntry" />
+            <End Role="AccountEntry" EntitySet="AccountEntry" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Books_BookCategories" Association="Self.FK_Books_BookCategories">
+            <End Role="BookCategories" EntitySet="BookCategories" />
+            <End Role="Books" EntitySet="Books" />
+          </AssociationSet>
+          <AssociationSet Name="FK_JournalEntry_ERCodes" Association="Self.FK_JournalEntry_ERCodes">
+            <End Role="ERCodes" EntitySet="ERCodes" />
+            <End Role="JournalEntry" EntitySet="JournalEntry" />
+          </AssociationSet>
+          <AssociationSet Name="FK_JournalEntry_TillId" Association="Self.FK_JournalEntry_TillId">
+            <End Role="Tills" EntitySet="Tills" />
+            <End Role="JournalEntry" EntitySet="JournalEntry" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Literature_PersonInformation" Association="Self.FK_Literature_PersonInformation">
+            <End Role="PersonInformation" EntitySet="PersonInformation" />
+            <End Role="Literature" EntitySet="Literature" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Monograph_Departments" Association="Self.FK_Monograph_Departments">
+            <End Role="Departments" EntitySet="Departments" />
+            <End Role="Monograph" EntitySet="Monograph" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Monograph_Faculty" Association="Self.FK_Monograph_Faculty">
+            <End Role="Faculties" EntitySet="Faculties" />
+            <End Role="Monograph" EntitySet="Monograph" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Monograph_PersonId" Association="Self.FK_Monograph_PersonId">
+            <End Role="PersonInformation" EntitySet="PersonInformation" />
+            <End Role="Monograph" EntitySet="Monograph" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Monograph_University" Association="Self.FK_Monograph_University">
+            <End Role="Universities" EntitySet="Universities" />
+            <End Role="Monograph" EntitySet="Monograph" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ShirzadSystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="AccountEntry">
+          <Key>
+            <PropertyRef Name="Aid" />
+          </Key>
+          <Property Name="Aid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="JournalId" Type="Int32" Nullable="false" />
+          <Property Name="EmpId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Employees" Relationship="Self.FK_AccountEntry_Employees" FromRole="AccountEntry" ToRole="Employees" />
+          <NavigationProperty Name="JournalEntry" Relationship="Self.FK_AccountEntry_JournalEntry" FromRole="AccountEntry" ToRole="JournalEntry" />
+        </EntityType>
+        <EntityType Name="BookCategories">
+          <Key>
+            <PropertyRef Name="Cid" />
+          </Key>
+          <Property Name="Cid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CategoryName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Books" Relationship="Self.FK_Books_BookCategories" FromRole="BookCategories" ToRole="Books" />
+        </EntityType>
+        <EntityType Name="Books">
+          <Key>
+            <PropertyRef Name="Bid" />
+          </Key>
+          <Property Name="Bid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BookName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="BookAuthor" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PublishYear" Type="Int32" Nullable="false" />
+          <Property Name="BookFile" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PublishingIndustry" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Cate_id" Type="Int32" />
+          <NavigationProperty Name="BookCategories" Relationship="Self.FK_Books_BookCategories" FromRole="Books" ToRole="BookCategories" />
+        </EntityType>
+        <EntityType Name="Departments">
+          <Key>
+            <PropertyRef Name="Did" />
+          </Key>
+          <Property Name="Did" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DepartmentName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Monograph" Relationship="Self.FK_Monograph_Departments" FromRole="Departments" ToRole="Monograph" />
+        </EntityType>
+        <EntityType Name="Employees">
+          <Key>
+            <PropertyRef Name="Eid" />
+          </Key>
+          <Property Name="Eid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FullName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FatherName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Job" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="PhoneNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="branch" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="AccountEntry" Relationship="Self.FK_AccountEntry_Employees" FromRole="Employees" ToRole="AccountEntry" />
+        </EntityType>
+        <EntityType Name="ERCodes">
+          <Key>
+            <PropertyRef Name="Cid" />
+          </Key>
+          <Property Name="Cid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CodeName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CodeType" Type="Boolean" Nullable="false" />
+          <Property Name="IsReserved" Type="Boolean" />
+          <NavigationProperty Name="JournalEntry" Relationship="Self.FK_JournalEntry_ERCodes" FromRole="ERCodes" ToRole="JournalEntry" />
+        </EntityType>
+        <EntityType Name="Faculties">
+          <Key>
+            <PropertyRef Name="Fid" />
+          </Key>
+          <Property Name="Fid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FacultyName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Monograph" Relationship="Self.FK_Monograph_Faculty" FromRole="Faculties" ToRole="Monograph" />
+        </EntityType>
+        <EntityType Name="JournalEntry">
+          <Key>
+            <PropertyRef Name="JEid" />
+          </Key>
+          <Property Name="JEid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Till" Type="Int32" Nullable="false" />
+          <Property Name="credit" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="debit" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TransactionType" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="AccountEntry" Relationship="Self.FK_AccountEntry_JournalEntry" FromRole="JournalEntry" ToRole="AccountEntry" />
+          <NavigationProperty Name="ERCodes" Relationship="Self.FK_JournalEntry_ERCodes" FromRole="JournalEntry" ToRole="ERCodes" />
+          <NavigationProperty Name="Tills" Relationship="Self.FK_JournalEntry_TillId" FromRole="JournalEntry" ToRole="Tills" />
+        </EntityType>
+        <EntityType Name="Literature">
+          <Key>
+            <PropertyRef Name="Lid" />
+          </Key>
+          <Property Name="Lid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UniqueId" Type="Int32" Nullable="false" />
+          <Property Name="LiteratureName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TotalAmount" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="TotalDiscount" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="TotalRecived" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="Person" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="PersonInformation" Relationship="Self.FK_Literature_PersonInformation" FromRole="Literature" ToRole="PersonInformation" />
+        </EntityType>
+        <EntityType Name="Monograph">
+          <Key>
+            <PropertyRef Name="Mid" />
+          </Key>
+          <Property Name="Mid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UniqueId" Type="Int32" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Year" Type="Int32" Nullable="false" />
+          <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="totalPrice" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="totalDiscount" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="totalRecived" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="PersonId" Type="Int32" />
+          <Property Name="UniversityId" Type="Int32" />
+          <Property Name="FacultyId" Type="Int32" />
+          <Property Name="DepartmentId" Type="Int32" />
+          <NavigationProperty Name="Departments" Relationship="Self.FK_Monograph_Departments" FromRole="Monograph" ToRole="Departments" />
+          <NavigationProperty Name="Faculties" Relationship="Self.FK_Monograph_Faculty" FromRole="Monograph" ToRole="Faculties" />
+          <NavigationProperty Name="PersonInformation" Relationship="Self.FK_Monograph_PersonId" FromRole="Monograph" ToRole="PersonInformation" />
+          <NavigationProperty Name="Universities" Relationship="Self.FK_Monograph_University" FromRole="Monograph" ToRole="Universities" />
+        </EntityType>
+        <EntityType Name="PersonInformation">
+          <Key>
+            <PropertyRef Name="PIid" />
+          </Key>
+          <Property Name="PIid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LastName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FatherName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Phone" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Province" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Literature" Relationship="Self.FK_Literature_PersonInformation" FromRole="PersonInformation" ToRole="Literature" />
+          <NavigationProperty Name="Monograph" Relationship="Self.FK_Monograph_PersonId" FromRole="PersonInformation" ToRole="Monograph" />
+        </EntityType>
+        <EntityType Name="Tills">
+          <Key>
+            <PropertyRef Name="Tid" />
+          </Key>
+          <Property Name="Tid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TillName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TillValue" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <NavigationProperty Name="JournalEntry" Relationship="Self.FK_JournalEntry_TillId" FromRole="Tills" ToRole="JournalEntry" />
+        </EntityType>
+        <EntityType Name="Universities">
+          <Key>
+            <PropertyRef Name="Uid" />
+          </Key>
+          <Property Name="Uid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UniversityName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Monograph" Relationship="Self.FK_Monograph_University" FromRole="Universities" ToRole="Monograph" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="Uid" />
+          </Key>
+          <Property Name="Uid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="UserName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_AccountEntry_Employees">
+          <End Role="Employees" Type="Self.Employees" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AccountEntry" Type="Self.AccountEntry" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employees">
+              <PropertyRef Name="Eid" />
+            </Principal>
+            <Dependent Role="AccountEntry">
+              <PropertyRef Name="EmpId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AccountEntry_JournalEntry">
+          <End Role="JournalEntry" Type="Self.JournalEntry" Multiplicity="1" />
+          <End Role="AccountEntry" Type="Self.AccountEntry" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JournalEntry">
+              <PropertyRef Name="JEid" />
+            </Principal>
+            <Dependent Role="AccountEntry">
+              <PropertyRef Name="JournalId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Books_BookCategories">
+          <End Role="BookCategories" Type="Self.BookCategories" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Books" Type="Self.Books" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BookCategories">
+              <PropertyRef Name="Cid" />
+            </Principal>
+            <Dependent Role="Books">
+              <PropertyRef Name="Cate_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Monograph_Departments">
+          <End Role="Departments" Type="Self.Departments" Multiplicity="0..1" />
+          <End Role="Monograph" Type="Self.Monograph" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Departments">
+              <PropertyRef Name="Did" />
+            </Principal>
+            <Dependent Role="Monograph">
+              <PropertyRef Name="DepartmentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_JournalEntry_ERCodes">
+          <End Role="ERCodes" Type="Self.ERCodes" Multiplicity="1" />
+          <End Role="JournalEntry" Type="Self.JournalEntry" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ERCodes">
+              <PropertyRef Name="Cid" />
+            </Principal>
+            <Dependent Role="JournalEntry">
+              <PropertyRef Name="TransactionType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Monograph_Faculty">
+          <End Role="Faculties" Type="Self.Faculties" Multiplicity="0..1" />
+          <End Role="Monograph" Type="Self.Monograph" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Faculties">
+              <PropertyRef Name="Fid" />
+            </Principal>
+            <Dependent Role="Monograph">
+              <PropertyRef Name="FacultyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_JournalEntry_TillId">
+          <End Role="Tills" Type="Self.Tills" Multiplicity="1" />
+          <End Role="JournalEntry" Type="Self.JournalEntry" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tills">
+              <PropertyRef Name="Tid" />
+            </Principal>
+            <Dependent Role="JournalEntry">
+              <PropertyRef Name="Till" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Literature_PersonInformation">
+          <End Role="PersonInformation" Type="Self.PersonInformation" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Literature" Type="Self.Literature" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PersonInformation">
+              <PropertyRef Name="PIid" />
+            </Principal>
+            <Dependent Role="Literature">
+              <PropertyRef Name="Person" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Monograph_PersonId">
+          <End Role="PersonInformation" Type="Self.PersonInformation" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Monograph" Type="Self.Monograph" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PersonInformation">
+              <PropertyRef Name="PIid" />
+            </Principal>
+            <Dependent Role="Monograph">
+              <PropertyRef Name="PersonId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Monograph_University">
+          <End Role="Universities" Type="Self.Universities" Multiplicity="0..1" />
+          <End Role="Monograph" Type="Self.Monograph" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Universities">
+              <PropertyRef Name="Uid" />
+            </Principal>
+            <Dependent Role="Monograph">
+              <PropertyRef Name="UniversityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ShirzadSystem" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AccountEntry" EntityType="Self.AccountEntry" />
+          <EntitySet Name="BookCategories" EntityType="Self.BookCategories" />
+          <EntitySet Name="Books" EntityType="Self.Books" />
+          <EntitySet Name="Departments" EntityType="Self.Departments" />
+          <EntitySet Name="Employees" EntityType="Self.Employees" />
+          <EntitySet Name="ERCodes" EntityType="Self.ERCodes" />
+          <EntitySet Name="Faculties" EntityType="Self.Faculties" />
+          <EntitySet Name="JournalEntry" EntityType="Self.JournalEntry" />
+          <EntitySet Name="Literature" EntityType="Self.Literature" />
+          <EntitySet Name="Monograph" EntityType="Self.Monograph" />
+          <EntitySet Name="PersonInformation" EntityType="Self.PersonInformation" />
+          <EntitySet Name="Tills" EntityType="Self.Tills" />
+          <EntitySet Name="Universities" EntityType="Self.Universities" />
+          <EntitySet Name="Users" EntityType="Self.Users" />
+          <AssociationSet Name="FK_AccountEntry_Employees" Association="Self.FK_AccountEntry_Employees">
+            <End Role="Employees" EntitySet="Employees" />
+            <End Role="AccountEntry" EntitySet="AccountEntry" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AccountEntry_JournalEntry" Association="Self.FK_AccountEntry_JournalEntry">
+            <End Role="JournalEntry" EntitySet="JournalEntry" />
+            <End Role="AccountEntry" EntitySet="AccountEntry" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Books_BookCategories" Association="Self.FK_Books_BookCategories">
+            <End Role="BookCategories" EntitySet="BookCategories" />
+            <End Role="Books" EntitySet="Books" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Monograph_Departments" Association="Self.FK_Monograph_Departments">
+            <End Role="Departments" EntitySet="Departments" />
+            <End Role="Monograph" EntitySet="Monograph" />
+          </AssociationSet>
+          <AssociationSet Name="FK_JournalEntry_ERCodes" Association="Self.FK_JournalEntry_ERCodes">
+            <End Role="ERCodes" EntitySet="ERCodes" />
+            <End Role="JournalEntry" EntitySet="JournalEntry" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Monograph_Faculty" Association="Self.FK_Monograph_Faculty">
+            <End Role="Faculties" EntitySet="Faculties" />
+            <End Role="Monograph" EntitySet="Monograph" />
+          </AssociationSet>
+          <AssociationSet Name="FK_JournalEntry_TillId" Association="Self.FK_JournalEntry_TillId">
+            <End Role="Tills" EntitySet="Tills" />
+            <End Role="JournalEntry" EntitySet="JournalEntry" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Literature_PersonInformation" Association="Self.FK_Literature_PersonInformation">
+            <End Role="PersonInformation" EntitySet="PersonInformation" />
+            <End Role="Literature" EntitySet="Literature" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Monograph_PersonId" Association="Self.FK_Monograph_PersonId">
+            <End Role="PersonInformation" EntitySet="PersonInformation" />
+            <End Role="Monograph" EntitySet="Monograph" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Monograph_University" Association="Self.FK_Monograph_University">
+            <End Role="Universities" EntitySet="Universities" />
+            <End Role="Monograph" EntitySet="Monograph" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ShirzadSystemModelStoreContainer" CdmEntityContainer="ShirzadSystem">
+          <EntitySetMapping Name="AccountEntry">
+            <EntityTypeMapping TypeName="ShirzadSystemModel.AccountEntry">
+              <MappingFragment StoreEntitySet="AccountEntry">
+                <ScalarProperty Name="Aid" ColumnName="Aid" />
+                <ScalarProperty Name="JournalId" ColumnName="JournalId" />
+                <ScalarProperty Name="EmpId" ColumnName="EmpId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BookCategories">
+            <EntityTypeMapping TypeName="ShirzadSystemModel.BookCategories">
+              <MappingFragment StoreEntitySet="BookCategories">
+                <ScalarProperty Name="Cid" ColumnName="Cid" />
+                <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Books">
+            <EntityTypeMapping TypeName="ShirzadSystemModel.Books">
+              <MappingFragment StoreEntitySet="Books">
+                <ScalarProperty Name="Bid" ColumnName="Bid" />
+                <ScalarProperty Name="BookName" ColumnName="BookName" />
+                <ScalarProperty Name="BookAuthor" ColumnName="BookAuthor" />
+                <ScalarProperty Name="PublishYear" ColumnName="PublishYear" />
+                <ScalarProperty Name="BookFile" ColumnName="BookFile" />
+                <ScalarProperty Name="PublishingIndustry" ColumnName="PublishingIndustry" />
+                <ScalarProperty Name="Cate_id" ColumnName="Cate_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Departments">
+            <EntityTypeMapping TypeName="ShirzadSystemModel.Departments">
+              <MappingFragment StoreEntitySet="Departments">
+                <ScalarProperty Name="Did" ColumnName="Did" />
+                <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="ShirzadSystemModel.Employees">
+              <MappingFragment StoreEntitySet="Employees">
+                <ScalarProperty Name="Eid" ColumnName="Eid" />
+                <ScalarProperty Name="FullName" ColumnName="FullName" />
+                <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+                <ScalarProperty Name="Job" ColumnName="Job" />
+                <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+                <ScalarProperty Name="branch" ColumnName="branch" />
+                <ScalarProperty Name="remarks" ColumnName="remarks" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ERCodes">
+            <EntityTypeMapping TypeName="ShirzadSystemModel.ERCodes">
+              <MappingFragment StoreEntitySet="ERCodes">
+                <ScalarProperty Name="Cid" ColumnName="Cid" />
+                <ScalarProperty Name="CodeName" ColumnName="CodeName" />
+                <ScalarProperty Name="CodeType" ColumnName="CodeType" />
+                <ScalarProperty Name="IsReserved" ColumnName="IsReserved" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Faculties">
+            <EntityTypeMapping TypeName="ShirzadSystemModel.Faculties">
+              <MappingFragment StoreEntitySet="Faculties">
+                <ScalarProperty Name="Fid" ColumnName="Fid" />
+                <ScalarProperty Name="FacultyName" ColumnName="FacultyName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="JournalEntry">
+            <EntityTypeMapping TypeName="ShirzadSystemModel.JournalEntry">
+              <MappingFragment StoreEntitySet="JournalEntry">
+                <ScalarProperty Name="JEid" ColumnName="JEid" />
+                <ScalarProperty Name="Till" ColumnName="Till" />
+                <ScalarProperty Name="credit" ColumnName="credit" />
+                <ScalarProperty Name="debit" ColumnName="debit" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="remarks" ColumnName="remarks" />
+                <ScalarProperty Name="TransactionType" ColumnName="TransactionType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Literature">
+            <EntityTypeMapping TypeName="ShirzadSystemModel.Literature">
+              <MappingFragment StoreEntitySet="Literature">
+                <ScalarProperty Name="Lid" ColumnName="Lid" />
+                <ScalarProperty Name="UniqueId" ColumnName="UniqueId" />
+                <ScalarProperty Name="LiteratureName" ColumnName="LiteratureName" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="remarks" ColumnName="remarks" />
+                <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+                <ScalarProperty Name="TotalDiscount" ColumnName="TotalDiscount" />
+                <ScalarProperty Name="TotalRecived" ColumnName="TotalRecived" />
+                <ScalarProperty Name="Person" ColumnName="Person" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Monograph">
+            <EntityTypeMapping TypeName="ShirzadSystemModel.Monograph">
+              <MappingFragment StoreEntitySet="Monograph">
+                <ScalarProperty Name="Mid" ColumnName="Mid" />
+                <ScalarProperty Name="UniqueId" ColumnName="UniqueId" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Year" ColumnName="Year" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="remarks" ColumnName="remarks" />
+                <ScalarProperty Name="totalPrice" ColumnName="totalPrice" />
+                <ScalarProperty Name="totalDiscount" ColumnName="totalDiscount" />
+                <ScalarProperty Name="totalRecived" ColumnName="totalRecived" />
+                <ScalarProperty Name="PersonId" ColumnName="PersonId" />
+                <ScalarProperty Name="UniversityId" ColumnName="UniversityId" />
+                <ScalarProperty Name="FacultyId" ColumnName="FacultyId" />
+                <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PersonInformation">
+            <EntityTypeMapping TypeName="ShirzadSystemModel.PersonInformation">
+              <MappingFragment StoreEntitySet="PersonInformation">
+                <ScalarProperty Name="PIid" ColumnName="PIid" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Photo" ColumnName="Photo" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="Province" ColumnName="Province" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tills">
+            <EntityTypeMapping TypeName="ShirzadSystemModel.Tills">
+              <MappingFragment StoreEntitySet="Tills">
+                <ScalarProperty Name="Tid" ColumnName="Tid" />
+                <ScalarProperty Name="TillName" ColumnName="TillName" />
+                <ScalarProperty Name="TillValue" ColumnName="TillValue" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Universities">
+            <EntityTypeMapping TypeName="ShirzadSystemModel.Universities">
+              <MappingFragment StoreEntitySet="Universities">
+                <ScalarProperty Name="Uid" ColumnName="Uid" />
+                <ScalarProperty Name="UniversityName" ColumnName="UniversityName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="ShirzadSystemModel.Users">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="Uid" ColumnName="Uid" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

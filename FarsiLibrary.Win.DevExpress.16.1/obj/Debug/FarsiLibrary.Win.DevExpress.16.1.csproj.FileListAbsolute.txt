@@ -1,0 +1,21 @@
+E:\Projects\Github\FarsiLibrary - Copy\binaries\FarsiLibrary.Win.DevExpress.16.1.dll
+E:\Projects\Github\FarsiLibrary - Copy\binaries\FarsiLibrary.Win.DevExpress.16.1.pdb
+E:\Projects\Github\FarsiLibrary - Copy\FarsiLibrary.Win.DevExpress.16.1\obj\Debug\FarsiLibrary.Win.DevExpress.16.1.csprojAssemblyReference.cache
+E:\Projects\Github\FarsiLibrary - Copy\FarsiLibrary.Win.DevExpress.16.1\obj\Debug\FarsiLibrary.Win.DevExpress.16.1.csproj.CoreCompileInputs.cache
+E:\Projects\Github\FarsiLibrary - Copy\FarsiLibrary.Win.DevExpress.16.1\obj\Debug\FarsiLibrary.Win.DevExpress.16.1.csproj.CopyComplete
+E:\Projects\Github\FarsiLibrary - Copy\FarsiLibrary.Win.DevExpress.16.1\obj\Debug\FarsiLibrary.Win.DevExpress.16.1.dll
+E:\Projects\Github\FarsiLibrary - Copy\FarsiLibrary.Win.DevExpress.16.1\obj\Debug\FarsiLibrary.Win.DevExpress.16.1.pdb
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\binaries\FarsiLibrary.Win.DevExpress.16.1.dll
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\binaries\FarsiLibrary.Win.DevExpress.16.1.pdb
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\FarsiLibrary.Win.DevExpress.16.1\obj\Debug\FarsiLibrary.Win.DevExpress.16.1.csprojAssemblyReference.cache
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\FarsiLibrary.Win.DevExpress.16.1\obj\Debug\FarsiLibrary.Win.DevExpress.16.1.csproj.CoreCompileInputs.cache
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\FarsiLibrary.Win.DevExpress.16.1\obj\Debug\FarsiLibrary.Win.DevExpress.16.1.csproj.CopyComplete
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\FarsiLibrary.Win.DevExpress.16.1\obj\Debug\FarsiLibrary.Win.DevExpress.16.1.dll
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\FarsiLibrary.Win.DevExpress.16.1\obj\Debug\FarsiLibrary.Win.DevExpress.16.1.pdb
+E:\Projects\SerzadSystem Copies\SherzadSystem\binaries\FarsiLibrary.Win.DevExpress.16.1.dll
+E:\Projects\SerzadSystem Copies\SherzadSystem\binaries\FarsiLibrary.Win.DevExpress.16.1.pdb
+E:\Projects\SerzadSystem Copies\SherzadSystem\FarsiLibrary.Win.DevExpress.16.1\obj\Debug\FarsiLibrary.Win.DevExpress.16.1.csprojAssemblyReference.cache
+E:\Projects\SerzadSystem Copies\SherzadSystem\FarsiLibrary.Win.DevExpress.16.1\obj\Debug\FarsiLibrary.Win.DevExpress.16.1.csproj.CoreCompileInputs.cache
+E:\Projects\SerzadSystem Copies\SherzadSystem\FarsiLibrary.Win.DevExpress.16.1\obj\Debug\FarsiLibrary.Win.DevExpress.16.1.csproj.CopyComplete
+E:\Projects\SerzadSystem Copies\SherzadSystem\FarsiLibrary.Win.DevExpress.16.1\obj\Debug\FarsiLibrary.Win.DevExpress.16.1.dll
+E:\Projects\SerzadSystem Copies\SherzadSystem\FarsiLibrary.Win.DevExpress.16.1\obj\Debug\FarsiLibrary.Win.DevExpress.16.1.pdb

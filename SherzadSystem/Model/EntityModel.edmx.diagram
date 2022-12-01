@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8fa7eb281c6d41a2a590d555eb9bd184" Name="Diagram1">
+        <EntityTypeShape EntityType="ShirzadSystemModel.AccountEntry" Width="1.5" PointX="13.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShirzadSystemModel.BookCategories" Width="1.5" PointX="5.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShirzadSystemModel.Books" Width="1.5" PointX="8" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShirzadSystemModel.Departments" Width="1.5" PointX="3.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShirzadSystemModel.Employees" Width="1.5" PointX="11" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShirzadSystemModel.ERCodes" Width="1.5" PointX="8.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShirzadSystemModel.Faculties" Width="1.5" PointX="3.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShirzadSystemModel.JournalEntry" Width="1.5" PointX="11" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShirzadSystemModel.Literature" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShirzadSystemModel.Monograph" Width="1.5" PointX="6" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShirzadSystemModel.PersonInformation" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShirzadSystemModel.Tills" Width="1.5" PointX="8.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShirzadSystemModel.Universities" Width="1.5" PointX="3.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShirzadSystemModel.Users" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="ShirzadSystemModel.FK_AccountEntry_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="ShirzadSystemModel.FK_AccountEntry_JournalEntry" ManuallyRouted="false" />
+        <AssociationConnector Association="ShirzadSystemModel.FK_Books_BookCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="ShirzadSystemModel.FK_Monograph_Departments" ManuallyRouted="false" />
+        <AssociationConnector Association="ShirzadSystemModel.FK_JournalEntry_ERCodes" ManuallyRouted="false" />
+        <AssociationConnector Association="ShirzadSystemModel.FK_Monograph_Faculty" ManuallyRouted="false" />
+        <AssociationConnector Association="ShirzadSystemModel.FK_JournalEntry_TillId" ManuallyRouted="false" />
+        <AssociationConnector Association="ShirzadSystemModel.FK_Literature_PersonInformation" ManuallyRouted="false" />
+        <AssociationConnector Association="ShirzadSystemModel.FK_Monograph_PersonId" ManuallyRouted="false" />
+        <AssociationConnector Association="ShirzadSystemModel.FK_Monograph_University" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

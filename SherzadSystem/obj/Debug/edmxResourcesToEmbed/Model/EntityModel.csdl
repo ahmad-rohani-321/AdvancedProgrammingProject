@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ShirzadSystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AccountEntry">
+    <Key>
+      <PropertyRef Name="Aid" />
+    </Key>
+    <Property Name="Aid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="JournalId" Type="Int32" Nullable="false" />
+    <Property Name="EmpId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Employees" Relationship="Self.FK_AccountEntry_Employees" FromRole="AccountEntry" ToRole="Employees" />
+    <NavigationProperty Name="JournalEntry" Relationship="Self.FK_AccountEntry_JournalEntry" FromRole="AccountEntry" ToRole="JournalEntry" />
+  </EntityType>
+  <EntityType Name="BookCategories">
+    <Key>
+      <PropertyRef Name="Cid" />
+    </Key>
+    <Property Name="Cid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Books" Relationship="Self.FK_Books_BookCategories" FromRole="BookCategories" ToRole="Books" />
+  </EntityType>
+  <EntityType Name="Books">
+    <Key>
+      <PropertyRef Name="Bid" />
+    </Key>
+    <Property Name="Bid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BookName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BookAuthor" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PublishYear" Type="Int32" Nullable="false" />
+    <Property Name="BookFile" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PublishingIndustry" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Cate_id" Type="Int32" />
+    <NavigationProperty Name="BookCategories" Relationship="Self.FK_Books_BookCategories" FromRole="Books" ToRole="BookCategories" />
+  </EntityType>
+  <EntityType Name="Departments">
+    <Key>
+      <PropertyRef Name="Did" />
+    </Key>
+    <Property Name="Did" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DepartmentName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Monograph" Relationship="Self.FK_Monograph_Departments" FromRole="Departments" ToRole="Monograph" />
+  </EntityType>
+  <EntityType Name="Employees">
+    <Key>
+      <PropertyRef Name="Eid" />
+    </Key>
+    <Property Name="Eid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FatherName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Job" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="branch" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AccountEntry" Relationship="Self.FK_AccountEntry_Employees" FromRole="Employees" ToRole="AccountEntry" />
+  </EntityType>
+  <EntityType Name="ERCodes">
+    <Key>
+      <PropertyRef Name="Cid" />
+    </Key>
+    <Property Name="Cid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CodeName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CodeType" Type="Boolean" Nullable="false" />
+    <Property Name="IsReserved" Type="Boolean" />
+    <NavigationProperty Name="JournalEntry" Relationship="Self.FK_JournalEntry_ERCodes" FromRole="ERCodes" ToRole="JournalEntry" />
+  </EntityType>
+  <EntityType Name="Faculties">
+    <Key>
+      <PropertyRef Name="Fid" />
+    </Key>
+    <Property Name="Fid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FacultyName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Monograph" Relationship="Self.FK_Monograph_Faculty" FromRole="Faculties" ToRole="Monograph" />
+  </EntityType>
+  <EntityType Name="JournalEntry">
+    <Key>
+      <PropertyRef Name="JEid" />
+    </Key>
+    <Property Name="JEid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Till" Type="Int32" Nullable="false" />
+    <Property Name="credit" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="debit" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TransactionType" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="AccountEntry" Relationship="Self.FK_AccountEntry_JournalEntry" FromRole="JournalEntry" ToRole="AccountEntry" />
+    <NavigationProperty Name="ERCodes" Relationship="Self.FK_JournalEntry_ERCodes" FromRole="JournalEntry" ToRole="ERCodes" />
+    <NavigationProperty Name="Tills" Relationship="Self.FK_JournalEntry_TillId" FromRole="JournalEntry" ToRole="Tills" />
+  </EntityType>
+  <EntityType Name="Literature">
+    <Key>
+      <PropertyRef Name="Lid" />
+    </Key>
+    <Property Name="Lid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UniqueId" Type="Int32" Nullable="false" />
+    <Property Name="LiteratureName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TotalAmount" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="TotalDiscount" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="TotalRecived" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="Person" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="PersonInformation" Relationship="Self.FK_Literature_PersonInformation" FromRole="Literature" ToRole="PersonInformation" />
+  </EntityType>
+  <EntityType Name="Monograph">
+    <Key>
+      <PropertyRef Name="Mid" />
+    </Key>
+    <Property Name="Mid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UniqueId" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="totalPrice" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="totalDiscount" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="totalRecived" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="PersonId" Type="Int32" />
+    <Property Name="UniversityId" Type="Int32" />
+    <Property Name="FacultyId" Type="Int32" />
+    <Property Name="DepartmentId" Type="Int32" />
+    <NavigationProperty Name="Departments" Relationship="Self.FK_Monograph_Departments" FromRole="Monograph" ToRole="Departments" />
+    <NavigationProperty Name="Faculties" Relationship="Self.FK_Monograph_Faculty" FromRole="Monograph" ToRole="Faculties" />
+    <NavigationProperty Name="PersonInformation" Relationship="Self.FK_Monograph_PersonId" FromRole="Monograph" ToRole="PersonInformation" />
+    <NavigationProperty Name="Universities" Relationship="Self.FK_Monograph_University" FromRole="Monograph" ToRole="Universities" />
+  </EntityType>
+  <EntityType Name="PersonInformation">
+    <Key>
+      <PropertyRef Name="PIid" />
+    </Key>
+    <Property Name="PIid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FatherName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Province" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Literature" Relationship="Self.FK_Literature_PersonInformation" FromRole="PersonInformation" ToRole="Literature" />
+    <NavigationProperty Name="Monograph" Relationship="Self.FK_Monograph_PersonId" FromRole="PersonInformation" ToRole="Monograph" />
+  </EntityType>
+  <EntityType Name="Tills">
+    <Key>
+      <PropertyRef Name="Tid" />
+    </Key>
+    <Property Name="Tid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TillName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TillValue" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <NavigationProperty Name="JournalEntry" Relationship="Self.FK_JournalEntry_TillId" FromRole="Tills" ToRole="JournalEntry" />
+  </EntityType>
+  <EntityType Name="Universities">
+    <Key>
+      <PropertyRef Name="Uid" />
+    </Key>
+    <Property Name="Uid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UniversityName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Monograph" Relationship="Self.FK_Monograph_University" FromRole="Universities" ToRole="Monograph" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Uid" />
+    </Key>
+    <Property Name="Uid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AccountEntry_Employees">
+    <End Role="Employees" Type="Self.Employees" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AccountEntry" Type="Self.AccountEntry" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="Eid" />
+      </Principal>
+      <Dependent Role="AccountEntry">
+        <PropertyRef Name="EmpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AccountEntry_JournalEntry">
+    <End Role="JournalEntry" Type="Self.JournalEntry" Multiplicity="1" />
+    <End Role="AccountEntry" Type="Self.AccountEntry" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JournalEntry">
+        <PropertyRef Name="JEid" />
+      </Principal>
+      <Dependent Role="AccountEntry">
+        <PropertyRef Name="JournalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Books_BookCategories">
+    <End Role="BookCategories" Type="Self.BookCategories" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Books" Type="Self.Books" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BookCategories">
+        <PropertyRef Name="Cid" />
+      </Principal>
+      <Dependent Role="Books">
+        <PropertyRef Name="Cate_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Monograph_Departments">
+    <End Role="Departments" Type="Self.Departments" Multiplicity="0..1" />
+    <End Role="Monograph" Type="Self.Monograph" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departments">
+        <PropertyRef Name="Did" />
+      </Principal>
+      <Dependent Role="Monograph">
+        <PropertyRef Name="DepartmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JournalEntry_ERCodes">
+    <End Role="ERCodes" Type="Self.ERCodes" Multiplicity="1" />
+    <End Role="JournalEntry" Type="Self.JournalEntry" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ERCodes">
+        <PropertyRef Name="Cid" />
+      </Principal>
+      <Dependent Role="JournalEntry">
+        <PropertyRef Name="TransactionType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Monograph_Faculty">
+    <End Role="Faculties" Type="Self.Faculties" Multiplicity="0..1" />
+    <End Role="Monograph" Type="Self.Monograph" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Faculties">
+        <PropertyRef Name="Fid" />
+      </Principal>
+      <Dependent Role="Monograph">
+        <PropertyRef Name="FacultyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_JournalEntry_TillId">
+    <End Role="Tills" Type="Self.Tills" Multiplicity="1" />
+    <End Role="JournalEntry" Type="Self.JournalEntry" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tills">
+        <PropertyRef Name="Tid" />
+      </Principal>
+      <Dependent Role="JournalEntry">
+        <PropertyRef Name="Till" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Literature_PersonInformation">
+    <End Role="PersonInformation" Type="Self.PersonInformation" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Literature" Type="Self.Literature" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PersonInformation">
+        <PropertyRef Name="PIid" />
+      </Principal>
+      <Dependent Role="Literature">
+        <PropertyRef Name="Person" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Monograph_PersonId">
+    <End Role="PersonInformation" Type="Self.PersonInformation" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Monograph" Type="Self.Monograph" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PersonInformation">
+        <PropertyRef Name="PIid" />
+      </Principal>
+      <Dependent Role="Monograph">
+        <PropertyRef Name="PersonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Monograph_University">
+    <End Role="Universities" Type="Self.Universities" Multiplicity="0..1" />
+    <End Role="Monograph" Type="Self.Monograph" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Universities">
+        <PropertyRef Name="Uid" />
+      </Principal>
+      <Dependent Role="Monograph">
+        <PropertyRef Name="UniversityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ShirzadSystem" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AccountEntry" EntityType="Self.AccountEntry" />
+    <EntitySet Name="BookCategories" EntityType="Self.BookCategories" />
+    <EntitySet Name="Books" EntityType="Self.Books" />
+    <EntitySet Name="Departments" EntityType="Self.Departments" />
+    <EntitySet Name="Employees" EntityType="Self.Employees" />
+    <EntitySet Name="ERCodes" EntityType="Self.ERCodes" />
+    <EntitySet Name="Faculties" EntityType="Self.Faculties" />
+    <EntitySet Name="JournalEntry" EntityType="Self.JournalEntry" />
+    <EntitySet Name="Literature" EntityType="Self.Literature" />
+    <EntitySet Name="Monograph" EntityType="Self.Monograph" />
+    <EntitySet Name="PersonInformation" EntityType="Self.PersonInformation" />
+    <EntitySet Name="Tills" EntityType="Self.Tills" />
+    <EntitySet Name="Universities" EntityType="Self.Universities" />
+    <EntitySet Name="Users" EntityType="Self.Users" />
+    <AssociationSet Name="FK_AccountEntry_Employees" Association="Self.FK_AccountEntry_Employees">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="AccountEntry" EntitySet="AccountEntry" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AccountEntry_JournalEntry" Association="Self.FK_AccountEntry_JournalEntry">
+      <End Role="JournalEntry" EntitySet="JournalEntry" />
+      <End Role="AccountEntry" EntitySet="AccountEntry" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Books_BookCategories" Association="Self.FK_Books_BookCategories">
+      <End Role="BookCategories" EntitySet="BookCategories" />
+      <End Role="Books" EntitySet="Books" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Monograph_Departments" Association="Self.FK_Monograph_Departments">
+      <End Role="Departments" EntitySet="Departments" />
+      <End Role="Monograph" EntitySet="Monograph" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JournalEntry_ERCodes" Association="Self.FK_JournalEntry_ERCodes">
+      <End Role="ERCodes" EntitySet="ERCodes" />
+      <End Role="JournalEntry" EntitySet="JournalEntry" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Monograph_Faculty" Association="Self.FK_Monograph_Faculty">
+      <End Role="Faculties" EntitySet="Faculties" />
+      <End Role="Monograph" EntitySet="Monograph" />
+    </AssociationSet>
+    <AssociationSet Name="FK_JournalEntry_TillId" Association="Self.FK_JournalEntry_TillId">
+      <End Role="Tills" EntitySet="Tills" />
+      <End Role="JournalEntry" EntitySet="JournalEntry" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Literature_PersonInformation" Association="Self.FK_Literature_PersonInformation">
+      <End Role="PersonInformation" EntitySet="PersonInformation" />
+      <End Role="Literature" EntitySet="Literature" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Monograph_PersonId" Association="Self.FK_Monograph_PersonId">
+      <End Role="PersonInformation" EntitySet="PersonInformation" />
+      <End Role="Monograph" EntitySet="Monograph" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Monograph_University" Association="Self.FK_Monograph_University">
+      <End Role="Universities" EntitySet="Universities" />
+      <End Role="Monograph" EntitySet="Monograph" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,6 @@
+MainPackage=E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\bin\AnyCPU\Release\SherzadSystemInstaller_1.0.2.0_AnyCPU.appx
+SymbolPackage=E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\obj\Release\Symbols\SherzadSystemInstaller_1.0.2.0_AnyCPU.appxsym
+ResourcePack=E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\bin\AnyCPU\Release\SherzadSystemInstaller_1.0.2.0_scale-100.appx
+ResourcePack=E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\bin\AnyCPU\Release\SherzadSystemInstaller_1.0.2.0_scale-125.appx
+ResourcePack=E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\bin\AnyCPU\Release\SherzadSystemInstaller_1.0.2.0_scale-150.appx
+ResourcePack=E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\bin\AnyCPU\Release\SherzadSystemInstaller_1.0.2.0_scale-400.appx

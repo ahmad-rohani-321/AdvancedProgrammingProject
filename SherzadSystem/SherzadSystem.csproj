@@ -1,0 +1,517 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BBADD6C3-17FC-4888-BAB2-64FD267FE7C7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SherzadSystem</RootNamespace>
+    <AssemblyName>SherzadSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\SherzadSystem\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons8_google_docs_1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v21.2" />
+    <Reference Include="DevExpress.Charts.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v21.2.Win, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dialogs.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v21.2.UI, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v21.2.UI, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v21.2.Wizard, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraDialogs.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v21.2" />
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPdfViewer.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraWizard.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Localization, Version=2.7.0.0, Culture=neutral, PublicKeyToken=def7c46cace23f8f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\FarsiLibrary.Localization\obj\Debug\FarsiLibrary.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Utils, Version=2.7.0.0, Culture=neutral, PublicKeyToken=def7c46cace23f8f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\FarsiLibrary.Utils\obj\Debug\FarsiLibrary.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Win, Version=2.7.0.0, Culture=neutral, PublicKeyToken=def7c46cace23f8f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\FarsiLibrary.Win\obj\Debug\FarsiLibrary.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\Accounting.cs" />
+    <Compile Include="Controller\Authentication.cs" />
+    <Compile Include="Controller\Books.cs" />
+    <Compile Include="Controller\Departments.cs" />
+    <Compile Include="Controller\Employee.cs" />
+    <Compile Include="Controller\ERCodes.cs" />
+    <Compile Include="Controller\Faculty.cs" />
+    <Compile Include="Controller\Literature.cs" />
+    <Compile Include="Controller\Monograph.cs" />
+    <Compile Include="Controller\Person.cs" />
+    <Compile Include="Controller\Universities.cs" />
+    <Compile Include="Defaults.cs" />
+    <Compile Include="Forms\ReadBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReadBook.Designer.cs">
+      <DependentUpon>ReadBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AllMonographs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AllMonographs.Designer.cs">
+      <DependentUpon>AllMonographs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AllPersons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AllPersons.Designer.cs">
+      <DependentUpon>AllPersons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loader.Designer.cs">
+      <DependentUpon>Loader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AccountEntry.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BookCategories.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Books.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Departments.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Employees.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EntityModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EntityModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EntityModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ERCodes.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Faculties.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\JournalEntry.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Literature.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Monograph.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PersonInformation.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Tills.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Universities.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Users.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Accounting\JournalEntry.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Accounting\JournalEntry.Designer.cs">
+      <DependentUpon>JournalEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Books\BookCategories.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Books\BookCategories.Designer.cs">
+      <DependentUpon>BookCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Books\Books.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Books\Books.Designer.cs">
+      <DependentUpon>Books.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Employee\EmployeeAccounting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Employee\EmployeeAccounting.Designer.cs">
+      <DependentUpon>EmployeeAccounting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Employee\SaveEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Employee\SaveEmployee.Designer.cs">
+      <DependentUpon>SaveEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Literature\NewLiteratureControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Literature\NewLiteratureControl.Designer.cs">
+      <DependentUpon>NewLiteratureControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Literature\OldLiterature.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Literature\OldLiterature.Designer.cs">
+      <DependentUpon>OldLiterature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Monographs\OldMonographs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Monographs\OldMonographs.Designer.cs">
+      <DependentUpon>OldMonographs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Monographs\NewMonographControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Monographs\NewMonographControl.Designer.cs">
+      <DependentUpon>NewMonographControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\People\SaveEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\People\SaveEmployee.Designer.cs">
+      <DependentUpon>SaveEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Report\EmployeeReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Report\EmployeeReport.Designer.cs">
+      <DependentUpon>EmployeeReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Report\LiteratureReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Report\LiteratureReport.Designer.cs">
+      <DependentUpon>LiteratureReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Report\MonographReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Report\MonographReport.Designer.cs">
+      <DependentUpon>MonographReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Report\JournalReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Report\JournalReport.Designer.cs">
+      <DependentUpon>JournalReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Settings\ERCodes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Settings\ERCodes.Designer.cs">
+      <DependentUpon>ERCodes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Settings\DepartmentControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Settings\DepartmentControl.Designer.cs">
+      <DependentUpon>DepartmentControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Settings\FacultyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Settings\FacultyControl.Designer.cs">
+      <DependentUpon>FacultyControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Settings\UniversityControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Settings\UniversityControl.Designer.cs">
+      <DependentUpon>UniversityControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Settings\UsersControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Settings\UsersControl.Designer.cs">
+      <DependentUpon>UsersControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\ReadBook.resx">
+      <DependentUpon>ReadBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AllMonographs.resx">
+      <DependentUpon>AllMonographs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AllPersons.resx">
+      <DependentUpon>AllPersons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loader.resx">
+      <DependentUpon>Loader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Views\Accounting\JournalEntry.resx">
+      <DependentUpon>JournalEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Books\BookCategories.resx">
+      <DependentUpon>BookCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Books\Books.resx">
+      <DependentUpon>Books.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Employee\EmployeeAccounting.resx">
+      <DependentUpon>EmployeeAccounting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Employee\SaveEmployee.resx">
+      <DependentUpon>SaveEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Literature\NewLiteratureControl.resx">
+      <DependentUpon>NewLiteratureControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Literature\OldLiterature.resx">
+      <DependentUpon>OldLiterature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Monographs\OldMonographs.resx">
+      <DependentUpon>OldMonographs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Monographs\NewMonographControl.resx">
+      <DependentUpon>NewMonographControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\People\SaveEmployee.resx">
+      <DependentUpon>SaveEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Report\EmployeeReport.resx">
+      <DependentUpon>EmployeeReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Report\LiteratureReport.resx">
+      <DependentUpon>LiteratureReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Report\MonographReport.resx">
+      <DependentUpon>MonographReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Report\JournalReport.resx">
+      <DependentUpon>JournalReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Settings\ERCodes.resx">
+      <DependentUpon>ERCodes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Settings\DepartmentControl.resx">
+      <DependentUpon>DepartmentControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Settings\FacultyControl.resx">
+      <DependentUpon>FacultyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Settings\UniversityControl.resx">
+      <DependentUpon>UniversityControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Settings\UsersControl.resx">
+      <DependentUpon>UsersControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <EntityDeploy Include="Model\EntityModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EntityModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model\EntityModel.edmx.diagram">
+      <DependentUpon>EntityModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons8_google_docs_1.ico" />
+    <Content Include="Model\EntityModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EntityModel.edmx</DependentUpon>
+      <LastGenOutput>EntityModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\EntityModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EntityModel.edmx</DependentUpon>
+      <LastGenOutput>EntityModel.cs</LastGenOutput>
+    </Content>
+    <None Include="Resources\ReportIcon.png" />
+    <None Include="Resources\StudentIcon.png" />
+    <None Include="Resources\ReadIcon.png" />
+    <None Include="Resources\JournalIcon.png" />
+    <None Include="Resources\EmpIcon.png" />
+    <None Include="Resources\PlusIcon.png" />
+    <None Include="Resources\WritingIcon.png" />
+    <None Include="Resources\WrtingIcon.png" />
+    <None Include="Resources\BookIcon.png" />
+    <None Include="Resources\BooksIcon.png" />
+    <None Include="Resources\SearchIcon.png" />
+    <None Include="Resources\SelectIcon1.png" />
+    <None Include="Resources\SelectIcon.png" />
+    <None Include="Resources\PicIcon.png" />
+    <None Include="Resources\PictureImage.bmp" />
+    <None Include="Resources\ClearIcon.png" />
+    <None Include="Resources\CancelIcon.png" />
+    <None Include="Resources\LogInIcon.png" />
+    <None Include="Resources\SaveIcon.png" />
+    <None Include="Resources\DashboardIcon.png" />
+    <None Include="Resources\SettingsIcon.png" />
+    <None Include="Resources\icons8_book_24px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FarsiLibrary.Win.DevExpress.16.1\FarsiLibrary.Win.DevExpress.16.1.csproj">
+      <Project>{D0E90437-9EEA-4A34-BF68-093D1717B76D}</Project>
+      <Name>FarsiLibrary.Win.DevExpress.16.1</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

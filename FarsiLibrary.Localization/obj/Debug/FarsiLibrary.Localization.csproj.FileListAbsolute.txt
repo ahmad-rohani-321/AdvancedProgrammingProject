@@ -1,0 +1,23 @@
+E:\Projects\Github\PashtoLibrary\binaries\FarsiLibrary.Localization.dll
+E:\Projects\Github\PashtoLibrary\binaries\FarsiLibrary.Localization.pdb
+E:\Projects\Github\PashtoLibrary\FarsiLibrary.Localization\obj\Debug\FarsiLibrary.Localization.csproj.CoreCompileInputs.cache
+E:\Projects\Github\PashtoLibrary\FarsiLibrary.Localization\obj\Debug\FarsiLibrary.Localization.dll
+E:\Projects\Github\PashtoLibrary\FarsiLibrary.Localization\obj\Debug\FarsiLibrary.Localization.pdb
+E:\Projects\Github\FarsiLibrary - Copy\binaries\FarsiLibrary.Localization.dll
+E:\Projects\Github\FarsiLibrary - Copy\binaries\FarsiLibrary.Localization.pdb
+E:\Projects\Github\FarsiLibrary - Copy\FarsiLibrary.Localization\obj\Debug\FarsiLibrary.Localization.csprojAssemblyReference.cache
+E:\Projects\Github\FarsiLibrary - Copy\FarsiLibrary.Localization\obj\Debug\FarsiLibrary.Localization.csproj.CoreCompileInputs.cache
+E:\Projects\Github\FarsiLibrary - Copy\FarsiLibrary.Localization\obj\Debug\FarsiLibrary.Localization.dll
+E:\Projects\Github\FarsiLibrary - Copy\FarsiLibrary.Localization\obj\Debug\FarsiLibrary.Localization.pdb
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\binaries\FarsiLibrary.Localization.dll
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\binaries\FarsiLibrary.Localization.pdb
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\FarsiLibrary.Localization\obj\Debug\FarsiLibrary.Localization.csprojAssemblyReference.cache
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\FarsiLibrary.Localization\obj\Debug\FarsiLibrary.Localization.csproj.CoreCompileInputs.cache
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\FarsiLibrary.Localization\obj\Debug\FarsiLibrary.Localization.dll
+E:\Projects\SerzadSystem Copies\SherzadSystem - Copy\FarsiLibrary.Localization\obj\Debug\FarsiLibrary.Localization.pdb
+E:\Projects\SerzadSystem Copies\SherzadSystem\binaries\FarsiLibrary.Localization.dll
+E:\Projects\SerzadSystem Copies\SherzadSystem\binaries\FarsiLibrary.Localization.pdb
+E:\Projects\SerzadSystem Copies\SherzadSystem\FarsiLibrary.Localization\obj\Debug\FarsiLibrary.Localization.csproj.CoreCompileInputs.cache
+E:\Projects\SerzadSystem Copies\SherzadSystem\FarsiLibrary.Localization\obj\Debug\FarsiLibrary.Localization.dll
+E:\Projects\SerzadSystem Copies\SherzadSystem\FarsiLibrary.Localization\obj\Debug\FarsiLibrary.Localization.pdb
+E:\Projects\SerzadSystem Copies\SherzadSystem\FarsiLibrary.Localization\obj\Debug\FarsiLibrary.Localization.csprojAssemblyReference.cache

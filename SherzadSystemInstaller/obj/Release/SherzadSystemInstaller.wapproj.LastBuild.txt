@@ -1,0 +1,253 @@
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\BadgeLogo.scale-100.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\BadgeLogo.scale-125.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\BadgeLogo.scale-150.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\BadgeLogo.scale-200.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\BadgeLogo.scale-400.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\LargeTile.scale-100.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\LargeTile.scale-125.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\LargeTile.scale-150.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\LargeTile.scale-200.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\LargeTile.scale-400.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\SmallTile.scale-100.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\SmallTile.scale-125.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\SmallTile.scale-150.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\SmallTile.scale-200.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\SmallTile.scale-400.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\SplashScreen.scale-100.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\SplashScreen.scale-125.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\SplashScreen.scale-150.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\SplashScreen.scale-200.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\LockScreenLogo.scale-200.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\SplashScreen.scale-400.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\Square150x150Logo.scale-100.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\Square150x150Logo.scale-125.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\Square150x150Logo.scale-150.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\Square150x150Logo.scale-200.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\Square150x150Logo.scale-400.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\Square44x44Logo.altform-unplated_targetsize-16.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\Square44x44Logo.altform-unplated_targetsize-256.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\Square44x44Logo.altform-unplated_targetsize-32.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\Square44x44Logo.altform-unplated_targetsize-48.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\Square44x44Logo.scale-100.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\Square44x44Logo.scale-125.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\Square44x44Logo.scale-150.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\Square44x44Logo.scale-200.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\Square44x44Logo.scale-400.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\Square44x44Logo.targetsize-16.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\Square44x44Logo.targetsize-24.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\Square44x44Logo.targetsize-24_altform-unplated.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\Square44x44Logo.targetsize-256.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\Square44x44Logo.targetsize-32.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\Square44x44Logo.targetsize-48.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\StoreLogo.scale-100.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\StoreLogo.scale-125.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\StoreLogo.scale-150.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\StoreLogo.scale-200.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\StoreLogo.scale-400.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\Wide310x150Logo.scale-100.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\Wide310x150Logo.scale-125.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\Wide310x150Logo.scale-150.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\Wide310x150Logo.scale-200.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\Images\Wide310x150Logo.scale-400.png
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystemInstaller\bin\AnyCPU\Release\resources.pri
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.BonusSkins.v21.2.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.Charts.v21.2.Core.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.Dashboard.v21.2.Core.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.Dashboard.v21.2.Win.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.Data.Desktop.v21.2.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.Data.v21.2.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.Dialogs.v21.2.Core.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.Printing.v21.2.Core.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.Utils.v21.2.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.Utils.v21.2.UI.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraBars.v21.2.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraCharts.v21.2.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraCharts.v21.2.UI.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraCharts.v21.2.Wizard.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraDialogs.v21.2.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraEditors.v21.2.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraGrid.v21.2.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraLayout.v21.2.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraNavBar.v21.2.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraPdfViewer.v21.2.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraPrinting.v21.2.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraTreeList.v21.2.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraWizard.v21.2.dll
+E:\Projects\SerzadSystem Copies\SherzadSystem\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll
+E:\Projects\SerzadSystem Copies\SherzadSystem\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll
+E:\Projects\SerzadSystem Copies\SherzadSystem\FarsiLibrary.Localization\obj\Debug\FarsiLibrary.Localization.dll
+E:\Projects\SerzadSystem Copies\SherzadSystem\FarsiLibrary.Utils\obj\Debug\FarsiLibrary.Utils.dll
+E:\Projects\SerzadSystem Copies\SherzadSystem\binaries\FarsiLibrary.Win.DevExpress.16.1.dll
+E:\Projects\SerzadSystem Copies\SherzadSystem\FarsiLibrary.Win\obj\Debug\FarsiLibrary.Win.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.PivotGrid.v21.2.Core.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.DataAccess.v21.2.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.Map.v21.2.Core.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraReports.v21.2.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraTreeMap.v21.2.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.RichEdit.v21.2.Core.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraGauges.v21.2.Core.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.Xpo.v21.2.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.TreeMap.v21.2.Core.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.Sparkline.v21.2.Core.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.Office.v21.2.Core.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.DataAccess.v21.2.UI.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraRichEdit.v21.2.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraPivotGrid.v21.2.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraMap.v21.2.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraGauges.v21.2.Win.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraTreeMap.v21.2.UI.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraGauges.v21.2.Presets.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.Pdf.v21.2.Core.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.Pdf.v21.2.Drawing.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraVerticalGrid.v21.2.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.DataVisualization.v21.2.Core.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.CodeParser.v21.2.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.XtraDiagram.v21.2.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.Diagram.v21.2.Core.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\DevExpress.Images.v21.2.dll
+E:\Projects\SerzadSystem Copies\SherzadSystem\binaries\FarsiLibrary.Win.DevExpress.16.1.pdb
+E:\Projects\SerzadSystem Copies\SherzadSystem\FarsiLibrary.Localization\obj\Debug\FarsiLibrary.Localization.pdb
+E:\Projects\SerzadSystem Copies\SherzadSystem\FarsiLibrary.Utils\obj\Debug\FarsiLibrary.Utils.pdb
+E:\Projects\SerzadSystem Copies\SherzadSystem\FarsiLibrary.Win\obj\Debug\FarsiLibrary.Win.pdb
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.Dashboard.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.Dashboard.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.Dashboard.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.Dashboard.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.Dashboard.v21.2.Win.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.Dashboard.v21.2.Win.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.Dashboard.v21.2.Win.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.Dashboard.v21.2.Win.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.Data.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.Data.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.Data.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.Data.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.Dialogs.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.Dialogs.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.Dialogs.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.Dialogs.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.Printing.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.Printing.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.Printing.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.Printing.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.Utils.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.Utils.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.Utils.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.Utils.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.Utils.v21.2.UI.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.Utils.v21.2.UI.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.Utils.v21.2.UI.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.Utils.v21.2.UI.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.XtraBars.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.XtraBars.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.XtraBars.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.XtraBars.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.XtraCharts.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.XtraCharts.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.XtraCharts.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.XtraCharts.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.XtraCharts.v21.2.Wizard.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.XtraCharts.v21.2.Wizard.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.XtraCharts.v21.2.Wizard.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.XtraCharts.v21.2.Wizard.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.XtraEditors.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.XtraEditors.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.XtraEditors.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.XtraEditors.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.XtraGrid.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.XtraGrid.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.XtraGrid.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.XtraGrid.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.XtraLayout.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.XtraLayout.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.XtraLayout.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.XtraLayout.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.XtraNavBar.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.XtraNavBar.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.XtraNavBar.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.XtraNavBar.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.XtraPdfViewer.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.XtraPdfViewer.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.XtraPdfViewer.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.XtraPdfViewer.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.XtraPrinting.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.XtraPrinting.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.XtraPrinting.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.XtraPrinting.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.XtraTreeList.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.XtraTreeList.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.XtraTreeList.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.XtraTreeList.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.XtraWizard.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.XtraWizard.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.XtraWizard.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.XtraWizard.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.PivotGrid.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.PivotGrid.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.PivotGrid.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.PivotGrid.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.DataAccess.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.DataAccess.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.DataAccess.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.DataAccess.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.Map.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.Map.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.Map.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.Map.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.XtraReports.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.XtraReports.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.XtraReports.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.XtraReports.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.RichEdit.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.RichEdit.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.RichEdit.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.RichEdit.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.XtraGauges.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.XtraGauges.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.XtraGauges.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.XtraGauges.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.Xpo.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.Xpo.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.Xpo.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.Xpo.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.Sparkline.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.Sparkline.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.Sparkline.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.Sparkline.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.Office.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.Office.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.Office.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.Office.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.DataAccess.v21.2.UI.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.DataAccess.v21.2.UI.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.DataAccess.v21.2.UI.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.DataAccess.v21.2.UI.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.XtraRichEdit.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.XtraRichEdit.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.XtraRichEdit.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.XtraRichEdit.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.XtraPivotGrid.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.XtraPivotGrid.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.XtraPivotGrid.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.XtraPivotGrid.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.XtraGauges.v21.2.Presets.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.XtraGauges.v21.2.Presets.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.XtraGauges.v21.2.Presets.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.XtraGauges.v21.2.Presets.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.Pdf.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.Pdf.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.Pdf.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.Pdf.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.XtraVerticalGrid.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.XtraVerticalGrid.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.XtraVerticalGrid.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.XtraVerticalGrid.v21.2.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\de\DevExpress.Diagram.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\es\DevExpress.Diagram.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ja\DevExpress.Diagram.v21.2.Core.resources.dll
+C:\Program Files (x86)\DevExpress 21.2\Components\Bin\Framework\ru\DevExpress.Diagram.v21.2.Core.resources.dll
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystem\icons8_google_docs_1.ico
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystem\Model\EntityModel.Context.tt
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystem\Model\EntityModel.tt
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystem\bin\SherzadSystem\SherzadSystem.exe
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystem\bin\SherzadSystem\SherzadSystem.exe.config
+E:\Projects\SerzadSystem Copies\SherzadSystem\SherzadSystem\bin\SherzadSystem\SherzadSystem.pdb
